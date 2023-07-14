@@ -1,0 +1,12 @@
+1.- Para esto se deberia crear un nuevo atributo en la clase Cuenta la cual sea 
+self.Cantidad_maxima_transferencia = 0 la cual se vaya actualizando agregando el valor 
+que se le resta al saldo al momento de usar la funcion pagar() y si este atributo llega
+a 200, ya no deje transferir dinero a esta cuenta. Esto puede hacerse con un if en la funcion
+pagar() if Cantidad_maxima_transferencia = 200 return "Ya no puedes transferir mas por hoy"
+
+2.- Se podrian crear test_Cases para comprobar que la funcion pagar permita realizar
+transferencias cuando la Cantidad_maxima_transferencia sea menor a 200 y que no las
+permita cuando sea el caso contrario
+
+3.- NO hay ningun riesgo puesto que simplemente estoy creando un atributo mas ya inicializado
+y las demas funciones no dependerian de ese atributo salvo pagar()
